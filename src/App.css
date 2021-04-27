@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: aliceblue;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin: 5px 0;
+}
+
+h2 {
+   font-size: 2rem;
+   font-weight: lighter;
+   margin: 10px 0;
+}
+
+h3 {
+   font-size: 1.25rem;
+   font-weight: lighter;
+   margin: 5px 0;
+}
+
+/* PROFILE */
+
+.profile {
+   margin: 5vh 5vw;
+   display: grid;
+   grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+   grid-gap: 25px;
+}
+
+
+
+.text, .image {
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image {
+  align-items: flex-end;
+}
+
+.text div {
+  text-align: left;
+}
+
+.intro {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin: 5px 0;
+  color: #fff600;
+  animation: animate 3s infinite ease-in-out;
+}
+
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;       
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+
+
+
+@keyframes animate {
+   0% {
+     opacity: 1;
+   }
+   50% {
+     opacity: 0.7;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+
+
+/* TECH */
+
+.tech {  
+  min-height: 20vh;
+  margin: 5vh 5vw;
+  background-color: #a6a39336;
+  border-radius: 20px;
+}
+
+.tech_child {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5vw;
+}
+
+.tech h2, .projects h2 {
+   font-weight: bolder;
+   word-spacing: 8px;
+   margin: 5px 0 50px 0;
+}
+
+.logos {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat( auto-fit, minmax(75px, 1fr) );
+  grid-gap: 10px;
+}
+
+svg {
+  height: 75px;
+  width: 75px;
+  margin: 0 10px;
+}
+
+
+/* PROJECTS */
+
+.projects {
+  min-height: 50vh;
+  margin: 0 5vw 5vh;
+  background-color: #0e0f0f96;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.25rem;
+  margin-bottom: 50px;
+}
+
+.projects_list {
+  margin: 15px 5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-gap: 20px;
+}
+
+.detail {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   word-spacing: 5px;
+}
+
+.detail h3 {
+  font-size: 1.75rem;
+  font-weight: bolder;
+}
+
+.detail h5 {
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+ 
+.image img {
+   width: 100%;
+   border-radius: 20px;
+}
+
+.btn-grp button, .btn {
+  height: 55px;
+  width: 180px;
+  border-radius: 30px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 5px;  
+  border: 2.5px solid #ff6701;
+  font-size: 1.15rem;
+}
+
+.btn {
+  width: 220px;
+  font-size: 1rem;
+  border: 2.5px solid #fff600;
+}
+
+.btn:hover {
+  background-color: #fff600;
+  color: #000;
+  border: none;
+}
+
+.btn-grp button:hover {
+   background-color: #ff6701;
+   border: none;
+}
+
+
+/* CONTACT */
+
+.contact {
+   margin: 2vh 5vw 0;
+   font-weight: 200;
+   text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  width: 50%;
+margin: 10px 0;
+font-size: 1.5em;
+padding: 10px;
+background: none;
+outline: none;
+border: 1px solid #fff;
+color: #fff;
+}
+
+.contact h2 {
+  font-weight: 900;
+}
+
+footer {
+   display: flex;
+   height: 10vh;
+   padding: 20px 0;
+   align-items: center;
+   justify-content: center;
+}
+
+footer svg {
+  height: 50px;
+  cursor: pointer;
+  width: 50px;
+}
+
+
+@media only screen and (max-width: 745px) {
+  .text, .image {
+    align-items: center;
+    justify-content: center;
+  }
+  input, textarea {
+    width: 80%
+   }
+}
+
+@media only screen and (max-width: 440px) {
+   
+   .profile {
+     margin: 0 5vw 5vh;
+   }
+   .projects, .tech {
+      margin: 5vh 0;
+   }
+   .intro {
+      display: inline-flex;
+   }
+   .projects_list {
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   }
+}
