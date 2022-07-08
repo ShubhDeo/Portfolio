@@ -18,7 +18,6 @@ body {
   width: 100vw;
 }
 
-
 h1 {
   font-size: 3rem;
   margin: 5px 0;
@@ -36,7 +35,20 @@ h3 {
    margin: 5px 0;
 }
 
+
 /* PROFILE */
+
+.resume {
+  text-decoration: none;
+  color: #fff600;
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.download {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .profile {
    margin: 5vh 5vw;

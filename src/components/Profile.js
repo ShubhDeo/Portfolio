@@ -1,5 +1,8 @@
 import React from 'react'
 import '../App.css'
+import { FaCloudDownloadAlt  } from 'react-icons/fa';
+
+
 
 const Profile = () => {
     return (
@@ -12,6 +15,9 @@ const Profile = () => {
                         <h3>I'm a student at IIIT Gwalior</h3>
                         <h3>and a <span className="intro">Full Stack Web Developer.</span></h3>
                     </div>
+                    <a href="https://drive.google.com/file/d/1zltrXsdk8i9lW5RwGins1mX16rU8CCuc/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>
+                       <h3 className='resume'>Resume <span className='download'><FaCloudDownloadAlt style={{height: "24px", width: "30px"}}/></span></h3>
+                    </a>
                 </div>
                 <div className="image">
                     <img src="/profile.jpg"
