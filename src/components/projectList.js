@@ -18,7 +18,7 @@ const projects = [
         icon: ['devicon-react-original', 'devicon-firebase-plain']
     },
     {
-        title: 'Crow Funding App',
+        title: 'Crowd Funding App',
         description: 'This project acts as a crowdfunding platform to NGOs. Simple UI based website made using Node.js, Express, Express Handlebars, Multer, GridFS and other packages.',
         img: '/fund.png',
         alt: 'fund-img',
