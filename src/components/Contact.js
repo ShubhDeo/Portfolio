@@ -44,10 +44,10 @@ const Contact = () => {
 
             <div className="contact-form">
                 <input type="text" placeholder="Enter Name" onChange={e => setName(e.target.value)} value={name}></input>
-                <input type="email" placeholder="Enter Name" onChange={e => setEmail(e.target.value)} value={email}></input>
+                <input type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)} value={email}></input>
                 <textarea
                     type="text"
-                    placeholder="Enter Name"
+                    placeholder="Enter message"
                     rows="5"
                     onChange={e => setMessage(e.target.value)}
                     value={message}
