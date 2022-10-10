@@ -13,7 +13,7 @@ const projects = [
         description: 'Web Application which is mainly used by the developer community to dicuss about the latest tools and technologies. ',
         img: '/chat.png',
         alt: 'chat-img',
-        web: 'https://devcommun.netlify.app/',
+        web: 'https://dev-commun.netlify.app/',
         code: 'https://github.com/ShubhDeo/devCommunity',
         icon: ['devicon-react-original', 'devicon-firebase-plain']
     },
