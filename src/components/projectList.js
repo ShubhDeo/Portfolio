@@ -4,7 +4,7 @@ const projects = [
         description: 'An e-commerce website made with MERN stack and Redux. Easy to use and understand, simple UI with all the necessary features.',
         img: '/e-comm.png',
         alt: 'comm-img',
-        web: '',
+        web: 'https://dazzling-jalebi-af6ec5.netlify.app/',
         code: 'https://github.com/ShubhDeo/Digi-Shop',
         icon: ['devicon-express-original', 'devicon-react-original', 'devicon-mongodb-plain', 'devicon-redux-original']
     },
